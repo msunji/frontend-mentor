@@ -1,5 +1,5 @@
-import reset from "styled-reset";
-import { createGlobalStyle } from "styled-components";
+import reset from 'styled-reset';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     ${reset}
@@ -41,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        min-height: 100vh;
     }
     h1 {
         font-size: 2em;
