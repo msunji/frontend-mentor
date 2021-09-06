@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Stats = styled.div`
   padding: 3rem 2rem;
@@ -22,6 +22,7 @@ export const Stats = styled.div`
     p {
       color: var(--neutral-white-headings);
       text-transform: uppercase;
+      font-family: var(--font-lexend);
     }
   }
 `;
