@@ -1,5 +1,5 @@
-import reset from "styled-reset";
-import { createGlobalStyle } from "styled-components";
+import reset from 'styled-reset';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     ${reset}
@@ -25,12 +25,19 @@ const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
         box-sizing: border-box;
         font-size: 15px;
-        line-height: 1.4;
+        line-height: 1.8;
         font-family: var(--font-inter);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
     body {
         background-color: var(--primary-blue);
         color: var(--neutral-white-main);
+    }
+    h1 {
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 1.2;
     }
 `;
 
