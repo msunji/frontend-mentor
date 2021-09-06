@@ -18,10 +18,19 @@ and here's how it looks on smaller screens:
 
 
 
-Overall, it was a good way to practice flexbox.
+There's not much to be said about this project I think. It's a good way to practice flexbox. Some bits about this project worth noting (for my personal reference):
+
+- The colour overlay for the header background image was set directly in the component's background property, as opposed to making a new div element for the colour overlay layer and  fiddling with positions. The code follows as so:
+
+```css
+    background: url([background image goes here]) hsl(277,64%,61%);
+```
+
+There's the other option of using `background-blend-mode` as well, which is something to try later (eventually)
 
 ## Built with
 - React (Bootstrapped with CRA)
 - styled-components
 - Flexbox
 - Mobile-first workflow
+- Hosted with Vercel
