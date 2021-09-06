@@ -62,54 +62,14 @@ const GlobalStyle = createGlobalStyle`
     footer {
         text-align: center;
     }
-    
+
     @media screen and (min-width: 760px) {
         :root {
             --padding-y: 5rem;
             --padding-x: 4rem;
         }
-
-        .card {
-            flex-direction: row-reverse;
-            
-            .card-content {
-                padding-top: var(--padding-y);
-                padding-bottom: var(--padding-y);
-                padding-left: var(--padding-x);
-                padding-right: var(--padding-x);
-                flex: 0 0 50%;
-                min-width: 0;
-            }
-        }
-        .header-img {
-            border-radius: 0 8px 8px 0;
-            flex: 0 0 50%;
-            width: 50%;
-            height: auto;
-            background: url("/assets/img/image-header-desktop.jpg") hsl(277, 64%, 61%);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .card-text {
-            text-align: left;
-
-            p {
-                padding-bottom: calc
-            }
-        }
         h1 {
             font-size: 2.4em;
-        }
-    }
-    @media screen and (min-width: 980px) {
-        .card-stats {
-            flex-direction: row;
-                .stat {
-                    text-align: left;
-                    :not(:last-of-type) {
-                        padding-bottom: 0;
-                    }
-                }
         }
     }
 `;

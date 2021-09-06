@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import device from '../styles/breakpoints';
 
 export const Stats = styled.div`
   display: flex;
@@ -24,6 +25,17 @@ export const Stats = styled.div`
       color: var(--neutral-white-headings);
       text-transform: uppercase;
       font-family: var(--font-lexend);
+    }
+  }
+
+  @media screen and ${device.sm} {
+    flex-direction: row;
+
+    .stat {
+      text-align: left;
+      :not(:last-of-type) {
+        padding-bottom: 0;
+      }
     }
   }
 `;

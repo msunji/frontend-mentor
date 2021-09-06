@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import device from '../styles/breakpoints';
 
 export const MainText = styled.div`
   text-align: center;
@@ -11,5 +12,13 @@ export const MainText = styled.div`
   }
   p {
     margin-bottom: var(--padding-y);
+  }
+
+  @media screen and ${device.sm} {
+    text-align: left;
+
+    p {
+      padding-bottom: calc;
+    }
   }
 `;
