@@ -1,9 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Card = styled.div`
-  width: 90%;
-  max-width: 1440px;
+  width: 85%;
+  min-width: 300px;
   background-color: var(--primary-desat-blue);
   border-radius: 8px;
-  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+
+  .card-content {
+    padding: var(--padding-y) var(--padding-x);
+  }
 `;
