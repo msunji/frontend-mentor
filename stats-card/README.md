@@ -2,7 +2,7 @@
 
 Here's a take on this [challenge](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62).
 
-![View my solution](https://fe-mentor-stats-card.vercel.app/)
+[View my solution](https://fe-mentor-stats-card.vercel.app/)
 
 ## Overview
 
