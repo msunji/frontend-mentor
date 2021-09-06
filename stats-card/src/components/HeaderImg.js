@@ -4,6 +4,7 @@ export const HeaderImg = styled.div`
   background-color: var(--primary-violet);
   background: url("/assets/img/image-header-mobile.jpg") hsl(277, 64%, 61%);
   background-size: cover;
+  background-repeat: no-repeat;
   height: 200px;
   width: 100%;
   max-height: 100%;
