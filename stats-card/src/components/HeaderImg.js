@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderImg = styled.div`
   background-color: var(--primary-violet);
   background: url("/assets/img/image-header-mobile.jpg") hsl(277, 64%, 61%);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
+  flex: 0 0 200px;
   width: 100%;
   max-height: 100%;
   overflow: hidden;
