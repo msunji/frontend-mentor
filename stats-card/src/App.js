@@ -6,10 +6,10 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Card>
-        <HeaderImg />
+      <Card className="card">
+        <HeaderImg className="header-img" />
         <section className="card-content">
-          <MainText>
+          <MainText className="card-text">
             <h1>
               Get <span className="highlight">insights</span> that help your
               business grow.
@@ -19,7 +19,7 @@ function App() {
               regarding revenue, customer experience, and overall efficiency.
             </p>
           </MainText>
-          <Stats>
+          <Stats className="card-stats">
             <div className="stat">
               <h3>10k+</h3>
               <p>companies</p>
