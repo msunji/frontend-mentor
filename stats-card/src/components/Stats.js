@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Stats = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
 
   .stat {
     flex: 1;

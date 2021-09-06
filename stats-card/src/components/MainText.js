@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MainText = styled.div`
   text-align: center;
@@ -10,6 +10,6 @@ export const MainText = styled.div`
     color: var(--primary-violet);
   }
   p {
-    margin-bottom: 2.4rem;
+    margin-bottom: var(--padding-y);
   }
 `;
