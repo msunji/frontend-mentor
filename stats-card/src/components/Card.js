@@ -9,6 +9,8 @@ export const Card = styled.div`
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 
   .card-content {
     padding: var(--padding-y) var(--padding-x);
