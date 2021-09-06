@@ -14,11 +14,13 @@ export const Stats = styled.div`
 
     h3 {
       color: var(--neutral-white);
-      font-size: 2em;
+      font-size: 1.5em;
       font-weight: 700;
       line-height: 1.2;
     }
     p {
+      font-size: 0.85em;
+      letter-spacing: 1px;
       color: var(--neutral-white-headings);
       text-transform: uppercase;
       font-family: var(--font-lexend);
