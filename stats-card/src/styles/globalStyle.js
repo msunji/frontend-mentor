@@ -99,7 +99,7 @@ const GlobalStyle = createGlobalStyle`
             }
         }
         h1 {
-            font-size: 2.1em;
+            font-size: 2.4em;
         }
     }
     @media screen and (min-width: 980px) {
