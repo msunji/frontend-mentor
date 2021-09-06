@@ -62,8 +62,7 @@ const GlobalStyle = createGlobalStyle`
     footer {
         text-align: center;
     }
-
-    // Media Queries
+    
     @media screen and (min-width: 760px) {
         :root {
             --padding-y: 5rem;
