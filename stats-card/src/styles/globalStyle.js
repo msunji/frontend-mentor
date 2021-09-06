@@ -28,6 +28,10 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.4;
         font-family: var(--font-inter);
     }
+    body {
+        background-color: var(--primary-blue);
+        color: var(--neutral-white-main);
+    }
 `;
 
 export default GlobalStyle;
