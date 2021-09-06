@@ -5,4 +5,5 @@ export const Card = styled.div`
   max-width: 1440px;
   background-color: var(--primary-desat-blue);
   border-radius: 8px;
+  padding: 2.5rem 2rem;
 `;
