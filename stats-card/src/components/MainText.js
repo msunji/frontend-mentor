@@ -9,4 +9,7 @@ export const MainText = styled.div`
   .highlight {
     color: var(--primary-violet);
   }
+  p {
+    margin-bottom: 2.4rem;
+  }
 `;
