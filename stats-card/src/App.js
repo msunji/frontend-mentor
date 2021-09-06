@@ -1,6 +1,6 @@
-import React from "react";
-import GlobalStyle from "./styles/globalStyle";
-import { Card, Stats, MainText, HeaderImg } from "./components";
+import React from 'react';
+import GlobalStyle from './styles/globalStyle';
+import { Card, Stats, MainText, HeaderImg } from './components';
 
 function App() {
   return (
@@ -36,7 +36,7 @@ function App() {
         </section>
       </Card>
       <footer>
-        Challenge by{" "}
+        Challenge by{' '}
         <a
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
@@ -46,7 +46,7 @@ function App() {
         </a>
         .
         <br />
-        Coded by{" "}
+        Coded by{' '}
         <a href="https://github.com/msunji/frontend-mentor">Marge Consunji</a>.
         <br />
       </footer>
