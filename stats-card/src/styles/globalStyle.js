@@ -42,13 +42,25 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         min-height: 100vh;
     }
     h1 {
         font-size: 2em;
         font-weight: 700;
         line-height: 1.2;
+    }
+    a, a:visited {
+        color: white;
+        transition: all 0.4s ease-in-out;
+    }
+    a:hover,
+    a:focus {
+        color: var(--primary-violet);
+    }
+
+    footer {
+        text-align: center;
     }
 
     // Media Queries
