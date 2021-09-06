@@ -35,6 +35,21 @@ function App() {
           </Stats>
         </section>
       </Card>
+      <footer>
+        Challenge by{" "}
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Frontend Mentor
+        </a>
+        .
+        <br />
+        Coded by{" "}
+        <a href="https://github.com/msunji/frontend-mentor">Marge Consunji</a>.
+        <br />
+      </footer>
     </>
   );
 }
