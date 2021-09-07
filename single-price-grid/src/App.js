@@ -1,5 +1,5 @@
 import GlobalStyle from "./styles/globalStyle";
-import { PriceGrid, Footer } from "./components";
+import { PriceGrid, Footer, Button } from "./components";
 
 function App() {
   return (
@@ -18,12 +18,20 @@ function App() {
               honing their skills.
             </p>
           </section>
-          <section></section>
+          <section className="monthly-subscription">
+            <h2>Monthly Subscription</h2>
+            <div className="monthly-price">
+              <h3>$29</h3>
+              <p>per month</p>
+            </div>
+            <p>Full access for less than $1 a day</p>
+            <Button>Sign Up</Button>
+          </section>
           <section></section>
         </PriceGrid>
       </main>
       <Footer>
-        <p class="attribution">
+        <p className="attribution">
           Challenge by{" "}
           <a
             href="https://www.frontendmentor.io?ref=challenge"
