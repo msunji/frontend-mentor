@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
   // CSS Vars
   :root {
     --cyan: hsl(179, 62%, 43%);
-    --lighter-cyan: hsl(179, 47%, 52%);
+    --lighter-cyan: hsl(179, 62%, 48%);
     --bright-yellow: hsl(71, 73%, 54%);
     --light-grey: hsl(204, 43%, 93%);
     --greyish-blue: hsl(218, 22%, 67%);
