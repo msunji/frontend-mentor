@@ -25,9 +25,7 @@ function App() {
               <p>per month</p>
             </div>
             <p>Full access for less than $1 a day</p>
-            <a href="#">
-              <Button>Sign Up</Button>
-            </a>
+            <Button>Sign Up</Button>
           </section>
           <section className="about">
             <h2>Why Us</h2>
