@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     --cyan: hsl(179, 62%, 43%);
     --bright-yellow: hsl(71, 73%, 54%);
     --light-grey: hsl(204, 43%, 93%);
-    --grayish-blue: hsl(218, 22%, 67%);
+    --greyish-blue: hsl(218, 22%, 67%);
     --karla: 'Karla', sans-serif;
   }
   *,
@@ -23,12 +23,20 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     overflow-x: hidden;
     box-sizing: border-box;
+    font-family: var(--karla);
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
+    color: var(--greyish-blue);
     background-color: var(--light-grey);
   }
-
+  main {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    flex: 1;
+    justify-content: center;
+  }
 `;
 
 export default GlobalStyle;
