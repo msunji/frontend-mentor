@@ -21,15 +21,15 @@ function App() {
           </MainText>
           <Stats>
             <div className="stat">
-              <h3>10k+</h3>
+              <h2>10k+</h2>
               <p>companies</p>
             </div>
             <div className="stat">
-              <h3>314</h3>
+              <h2>314</h2>
               <p>templates</p>
             </div>
             <div className="stat">
-              <h3>12M+</h3>
+              <h2>12M+</h2>
               <p>queries</p>
             </div>
           </Stats>

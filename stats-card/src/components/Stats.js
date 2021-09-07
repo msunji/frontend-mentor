@@ -13,7 +13,7 @@ export const Stats = styled.div`
       padding-bottom: 1.8rem;
     }
 
-    h3 {
+    h2 {
       color: var(--neutral-white);
       font-size: 1.5em;
       font-weight: 700;
