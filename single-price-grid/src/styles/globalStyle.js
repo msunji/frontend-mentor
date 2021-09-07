@@ -11,6 +11,8 @@ const GlobalStyle = createGlobalStyle`
     --light-grey: hsl(204, 43%, 93%);
     --greyish-blue: hsl(218, 22%, 67%);
     --karla: 'Karla', sans-serif;
+    --padding-y: 2rem;
+    --padding-x: 2rem;
   }
   *,
   *:before,
