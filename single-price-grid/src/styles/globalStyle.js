@@ -11,10 +11,10 @@ const GlobalStyle = createGlobalStyle`
     --bright-yellow: hsl(71, 73%, 54%);
     --light-grey: hsl(204, 43%, 93%);
     --greyish-blue: hsl(218, 22%, 67%);
-    --transluscent-greyish-blue: hsl(218, 22%, 67%)a;
+    --transluscent-greyish-blue: hsla(218, 22%, 67%);
     --karla: 'Karla', sans-serif;
-    --padding-y: 2rem;
-    --padding-x: 2rem;
+    --padding-y: 1.5rem;
+    --padding-x: 1.6rem;
   }
   *,
   *:before,
