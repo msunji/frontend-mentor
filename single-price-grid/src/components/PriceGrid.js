@@ -12,11 +12,36 @@ export const PriceGrid = styled.div`
     padding: var(--padding-y) var(--padding-x);
   }
 
+  .monthly {
+    &-subscription {
+      background-color: var(--cyan);
+      color: white;
+    }
+    &-price {
+      display: flex;
+      align-items: center;
+
+      h3 {
+        font-size: 2.1em;
+        font-weight: 700;
+        margin-right: 13px;
+      }
+      p {
+        color: var(--transluscent-greyish-blue);
+      }
+    }
+  }
+
   h1 {
     color: var(--cyan);
     font-weight: 700;
-    font-size: 1.3em;
+    font-size: 1.38em;
     margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.22em;
   }
 
   .highlight {
