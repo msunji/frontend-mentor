@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: var(--karla);
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.8;
     font-weight: 400;
     color: var(--greyish-blue);
     background-color: var(--light-grey);
