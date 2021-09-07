@@ -9,4 +9,5 @@ export const Button = styled.button`
   font-weight: 700;
   font-size: 1.01em;
   padding: 0.8rem 3rem;
+  box-shadow: 1px 3px 16px 0px rgb(2 110 194 / 20%);
 `;
