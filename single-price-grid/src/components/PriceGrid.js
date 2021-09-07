@@ -7,6 +7,7 @@ export const PriceGrid = styled.div`
   color: var(--greyish-blue);
   margin: 2rem 0;
   border-radius: 8px;
+  box-shadow: 1px 3px 16px 0px rgb(2 110 194 / 20%);
 
   section {
     padding: var(--padding-y) var(--padding-x);
@@ -16,18 +17,24 @@ export const PriceGrid = styled.div`
     &-subscription {
       background-color: var(--cyan);
       color: white;
+
+      > p {
+        margin-bottom: 1.5rem;
+      }
     }
     &-price {
       display: flex;
       align-items: center;
+      margin-bottom: 0.5rem;
 
       h3 {
         font-size: 2.1em;
         font-weight: 700;
         margin-right: 13px;
+        line-height: 1;
       }
       p {
-        color: var(--transluscent-greyish-blue);
+        color: #ffffffb0;
       }
     }
   }
@@ -42,6 +49,7 @@ export const PriceGrid = styled.div`
   h2 {
     font-weight: 700;
     font-size: 1.22em;
+    margin-bottom: 1rem;
   }
 
   .highlight {
