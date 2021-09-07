@@ -7,13 +7,13 @@ const GlobalStyle = createGlobalStyle`
   // CSS Vars
   :root {
     --cyan: hsl(179, 62%, 43%);
-    --lighter-cyan: hsl(179, 62%, 48%);
+    --lighter-cyan: hsla(179, 62%, 43%, 0.8);
     --bright-yellow: hsl(71, 73%, 54%);
     --light-grey: hsl(204, 43%, 93%);
     --greyish-blue: hsl(218, 22%, 67%);
     --transluscent-greyish-blue: hsla(218, 22%, 67%);
     --karla: 'Karla', sans-serif;
-    --padding-y: 1.5rem;
+    --padding-y: 1.6rem;
     --padding-x: 1.6rem;
   }
   *,
@@ -38,12 +38,23 @@ const GlobalStyle = createGlobalStyle`
     color: var(--greyish-blue);
     background-color: var(--light-grey);
   }
+  #root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
   main {
     display: flex;
-    align-content: center;
+    align-items: center;
     width: 100%;
     flex: 1;
     justify-content: center;
+  }
+  @media screen and (min-width: 500px) {
+    :root {
+      --padding-y: 3rem;
+      --padding-x: 3rem;
+    }
   }
 `;
 
