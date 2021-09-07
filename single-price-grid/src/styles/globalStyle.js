@@ -50,6 +50,11 @@ const GlobalStyle = createGlobalStyle`
     flex: 1;
     justify-content: center;
   }
+
+  a[href], button {
+    cursor: pointer;
+  }
+
   @media screen and (min-width: 500px) {
     :root {
       --padding-y: 3rem;
