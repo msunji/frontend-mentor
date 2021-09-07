@@ -83,7 +83,7 @@ export const PriceGrid = styled.div`
     margin-bottom: 1rem;
   }
 
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 599px) {
     grid-template-rows: repeat(2, auto);
     grid-template-columns: 50% 50%;
     grid-template-areas:
