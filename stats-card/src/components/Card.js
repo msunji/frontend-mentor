@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import device from '../styles/breakpoints';
 
-export const Card = styled.div`
+export const Card = styled.main`
   width: 85%;
   min-width: 300px;
   max-width: 1000px;
