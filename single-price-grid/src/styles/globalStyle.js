@@ -7,9 +7,11 @@ const GlobalStyle = createGlobalStyle`
   // CSS Vars
   :root {
     --cyan: hsl(179, 62%, 43%);
+    --lighter-cyan: hsl(179, 47%, 52%);
     --bright-yellow: hsl(71, 73%, 54%);
     --light-grey: hsl(204, 43%, 93%);
     --greyish-blue: hsl(218, 22%, 67%);
+    --transluscent-greyish-blue: hsl(218, 22%, 67%)a;
     --karla: 'Karla', sans-serif;
     --padding-y: 2rem;
     --padding-x: 2rem;
@@ -18,6 +20,10 @@ const GlobalStyle = createGlobalStyle`
   *:before,
   *:after {
     box-sizing: border-box;
+  }
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   body {
     min-height: 100vh;
