@@ -39,6 +39,17 @@ export const PriceGrid = styled.div`
     }
   }
 
+  .about {
+    background-color: var(--lighter-cyan);
+    color: white;
+    border-radius: 0 0 8px 8px;
+
+    li {
+      line-height: 1.5;
+      font-size: 0.96em;
+    }
+  }
+
   h1 {
     color: var(--cyan);
     font-weight: 700;
