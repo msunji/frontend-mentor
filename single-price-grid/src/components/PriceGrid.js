@@ -10,7 +10,6 @@ export const PriceGrid = styled.div`
   box-shadow: 1px 3px 16px 0px rgb(2 110 194 / 20%);
   display: grid;
   grid-template-rows: repeat(3, auto);
-  grid-template-columns: auto;
   grid-template-areas:
     "main"
     "subscription"
