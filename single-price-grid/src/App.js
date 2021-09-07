@@ -7,7 +7,7 @@ function App() {
       <GlobalStyle />
       <main>
         <PriceGrid>
-          <section>
+          <section className="main-text">
             <h1>Join our community</h1>
             <p className="highlight">
               30-day, hassle-free money back guarantee
@@ -25,7 +25,9 @@ function App() {
               <p>per month</p>
             </div>
             <p>Full access for less than $1 a day</p>
-            <Button>Sign Up</Button>
+            <a href="#">
+              <Button>Sign Up</Button>
+            </a>
           </section>
           <section className="about">
             <h2>Why Us</h2>
