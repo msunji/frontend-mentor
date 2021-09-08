@@ -5,11 +5,13 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Grid>
-        <MainText />
-        <Ratings />
-        <Testimonials />
-      </Grid>
+      <main>
+        <Grid>
+          <MainText />
+          <Ratings />
+          <Testimonials />
+        </Grid>
+      </main>
       <Footer />
     </>
   );
