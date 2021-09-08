@@ -1,13 +1,16 @@
 export const RatingsData = [
   {
+    id: 0,
     stars: 5,
     rating: "Rated 5 stars in Reviews",
   },
   {
+    id: 1,
     stars: 5,
     rating: "Rated 5 stars in Report Guru",
   },
   {
+    id: 2,
     stars: 5,
     rating: "Rated 5 stars in BestTech",
   },
