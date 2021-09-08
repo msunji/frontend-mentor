@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { RatingsData } from "../content/content";
 
 const RatingsSection = styled.section`
-  grid-area: "ratings";
+  grid-area: ratings;
 `;
 
 const Rating = styled.div`

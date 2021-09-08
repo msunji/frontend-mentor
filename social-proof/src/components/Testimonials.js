@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { TestimonialsData } from "../content/content";
 
 const TestimonialSection = styled.section`
-  // grid-area: testimonials;
+  grid-area: testimonials;
 `;
 
 const Testimonial = styled.div`
