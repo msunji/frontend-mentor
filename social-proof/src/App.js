@@ -1,8 +1,16 @@
+import GlobalStyle from "./styles/globalStyle";
+import { Grid, MainText, Ratings, Footer } from "./components";
+
 function App() {
   return (
-    <div>
-      <h1>Test</h1>
-    </div>
+    <>
+      <GlobalStyle />
+      <Grid>
+        <MainText />
+        <Ratings />
+      </Grid>
+      <Footer />
+    </>
   );
 }
 
