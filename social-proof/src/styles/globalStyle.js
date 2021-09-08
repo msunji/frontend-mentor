@@ -32,6 +32,13 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     min-height: 100vh;
+    background-image: 
+      url('/img/bg-pattern-top-mobile.svg'), 
+      url('/img/bg-pattern-bottom-mobile.svg');
+    background-position:
+      top left,
+      bottom right;
+    background-repeat: no-repeat;
   }
 `;
 
