@@ -1,5 +1,5 @@
 import GlobalStyle from "./styles/globalStyle";
-import { Grid, MainText, Ratings, Footer } from "./components";
+import { Grid, MainText, Ratings, Footer, Testimonials } from "./components";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Grid>
         <MainText />
         <Ratings />
+        <Testimonials />
       </Grid>
       <Footer />
     </>
