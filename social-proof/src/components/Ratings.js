@@ -40,7 +40,6 @@ const Rating = styled.div`
 
   @media screen and ${breakpoints.lg} {
     flex-direction: row;
-    max-width: 35em;
 
     .stars-container {
       margin-bottom: 0;
