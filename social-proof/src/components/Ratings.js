@@ -42,7 +42,6 @@ const Rating = styled.div`
     flex-direction: row;
 
     .stars-container {
-      margin-bottom: 0;
       margin-right: 2.3rem;
     }
 
