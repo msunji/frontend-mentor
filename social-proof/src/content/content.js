@@ -18,18 +18,21 @@ export const RatingsData = [
 
 export const TestimonialsData = [
   {
+    id: 0,
     name: "Colton Smith",
     title: "Verified Buyer",
     testimonial:
       '"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time.Excellent!"',
   },
   {
+    id: 1,
     name: "Irene Roberts",
     title: "Verified Buyer",
     testimonial:
       '"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."',
   },
   {
+    id: 2,
     name: "Anne Wallace",
     title: "Verified Buyer",
     testimonial:
