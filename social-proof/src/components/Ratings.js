@@ -15,7 +15,6 @@ const Rating = styled.div`
   flex-direction: column;
   padding: 1.12rem 2rem;
   align-items: center;
-
   :not(:last-of-type) {
     margin-bottom: 1.3rem;
   }
@@ -30,7 +29,13 @@ const Rating = styled.div`
 
   p {
     font-weight: 700;
+    font-size: 0.92em;
     color: var(--dark-magenta);
+  }
+
+  @media screen and ${breakpoints.xs} {
+    width: 30em;
+    align-self: center;
   }
 
   @media screen and ${breakpoints.lg} {
