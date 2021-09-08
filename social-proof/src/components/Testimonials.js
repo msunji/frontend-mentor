@@ -10,7 +10,7 @@ const TestimonialSection = styled.section`
   @media screen and ${breakpoints.lg} {
     flex-direction: row;
     display: flex;
-    min-height: 25.5em;
+    height: 25.5em;
   }
 `;
 
