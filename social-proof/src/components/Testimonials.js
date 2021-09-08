@@ -10,10 +10,39 @@ const Testimonial = styled.div`
   border-radius: 9px;
   color: var(--grey-magenta-light);
   font-weight: 500;
-  padding: var(--padding-y) var(--padding-x);
+  padding: calc(1.5 * var(--padding-y)) var(--padding-x);
+
+  .buyer-info {
+    display: flex;
+    margin-bottom: var(--margin-y);
+    align-items: center;
+
+    .buyer-photo {
+      border-radius: 50%;
+      max-width: 18%;
+      height: auto;
+      margin-right: 30px;
+    }
+
+    .buyer-details {
+      font-size: 0.92em;
+
+      .buyer-name {
+        font-weight: 700;
+      }
+      .buyer-title {
+        color: var(--pink);
+      }
+    }
+  }
 
   :not(:last-of-type) {
     margin-bottom: 1.3rem;
+  }
+
+  .testimonial {
+    font-size: 0.92em;
+    line-height: 1.8;
   }
 `;
 
@@ -22,16 +51,14 @@ export const Testimonials = () => {
     <TestimonialSection>
       {TestimonialsData.map(({ id, name, title, testimonial, photo }) => (
         <Testimonial key={id}>
-          <div>
-            <div>
-              <img src={photo} alt={`${name}`} />
-            </div>
-            <div>
-              <p>{name}</p>
-              <p>{title}</p>
+          <div className="buyer-info">
+            <img className="buyer-photo" src={photo} alt={`${name}`} />
+            <div className="buyer-details">
+              <p className="buyer-name">{name}</p>
+              <p className="buyer-title">{title}</p>
             </div>
           </div>
-          <div>{testimonial}</div>
+          <div className="testimonial">{testimonial}</div>
         </Testimonial>
       ))}
     </TestimonialSection>
