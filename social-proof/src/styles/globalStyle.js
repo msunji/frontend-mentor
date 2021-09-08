@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
     --grey-magenta-light: hsl(303, 10%, 53%);
     --white: hsl(0, 0%, 100%);
     --spartan: 'Spartan', sans-serif;
+    --padding-y: 2rem;
+    --padding-x: 2rem;
+    --margin-y: 2rem;
+    --margin-x: 2rem;
   }
 
   *, *:before, *:after {
@@ -33,12 +37,15 @@ const GlobalStyle = createGlobalStyle`
   body {
     min-height: 100vh;
     background-image: 
-      url('/img/bg-pattern-top-mobile.svg'), 
-      url('/img/bg-pattern-bottom-mobile.svg');
+      url('../assets/img/bg-pattern-top-mobile.svg'), 
+      url('../assets/img/bg-pattern-bottom-mobile.svg');
     background-position:
       top left,
       bottom right;
     background-repeat: no-repeat;
+  }
+  #root {
+
   }
 `;
 
