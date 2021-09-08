@@ -21,7 +21,7 @@ export const TestimonialsData = [
     id: 0,
     name: "Colton Smith",
     title: "Verified Buyer",
-    photo: "../assets/img/image-colton.jpg",
+    photo: "/img/image-colton.jpg",
     testimonial:
       '"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time.Excellent!"',
   },
@@ -29,7 +29,7 @@ export const TestimonialsData = [
     id: 1,
     name: "Irene Roberts",
     title: "Verified Buyer",
-    photo: "../assets/img/image-irene.jpg",
+    photo: "/img/image-irene.jpg",
     testimonial:
       '"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."',
   },
@@ -37,7 +37,7 @@ export const TestimonialsData = [
     id: 2,
     name: "Anne Wallace",
     title: "Verified Buyer",
-    photo: "../assets/img/image-anne.jpg",
+    photo: "/img/image-anne.jpg",
     testimonial:
       '"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"',
   },
