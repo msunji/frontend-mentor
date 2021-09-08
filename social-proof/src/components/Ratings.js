@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { RatingsData } from "../content/content";
+import breakpoints from "../styles/breakpoints";
 
 const RatingsSection = styled.section`
   grid-area: ratings;
@@ -11,10 +12,11 @@ const Rating = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 1.3rem;
-  padding: 1.12rem 0;
+  padding: 1.12rem 2rem;
   align-items: center;
 
   .stars-container {
+    display: flex;
     img:not(:last-of-type) {
       margin-right: 8px;
     }
@@ -24,6 +26,14 @@ const Rating = styled.div`
   p {
     font-weight: 700;
     color: var(--dark-magenta);
+  }
+  @media screen and ${breakpoints.lg} {
+    flex-direction: row;
+
+    .stars-container {
+      margin-bottom: 0;
+      margin-right: 2.3rem;
+    }
   }
 `;
 
