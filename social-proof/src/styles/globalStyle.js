@@ -7,8 +7,8 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --magenta-dark: hsl(300, 43%, 22%);
     --pink: hsl(333, 80%, 67%);
-    --grey-magenta-dark: hsl(300, 24%, 96%);
-    --grey-magenta-light: hsl(303, 10%, 53%);
+    --grey-magenta-light: hsl(300, 24%, 96%);
+    --grey-magenta-dark: hsl(303, 10%, 53%);
     --white: hsl(0, 0%, 100%);
     --spartan: 'Spartan', sans-serif;
     --padding-y: 2rem;
