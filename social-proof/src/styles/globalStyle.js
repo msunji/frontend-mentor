@@ -37,8 +37,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     min-height: 100vh;
     background-image: 
-      url('../assets/img/bg-pattern-top-mobile.svg'), 
-      url('../assets/img/bg-pattern-bottom-mobile.svg');
+      url('/img/bg-pattern-top-mobile.svg'), 
+      url('/img/bg-pattern-bottom-mobile.svg');
     background-position:
       top left,
       bottom right;
