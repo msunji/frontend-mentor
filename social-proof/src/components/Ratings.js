@@ -4,6 +4,8 @@ import breakpoints from "../styles/breakpoints";
 
 const RatingsSection = styled.section`
   grid-area: ratings;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Rating = styled.div`
@@ -11,9 +13,12 @@ const Rating = styled.div`
   border-radius: 9px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.3rem;
   padding: 1.12rem 2rem;
   align-items: center;
+
+  :not(:last-of-type) {
+    margin-bottom: 1.3rem;
+  }
 
   .stars-container {
     display: flex;
@@ -27,12 +32,24 @@ const Rating = styled.div`
     font-weight: 700;
     color: var(--dark-magenta);
   }
+
   @media screen and ${breakpoints.lg} {
     flex-direction: row;
+    max-width: 35em;
 
     .stars-container {
       margin-bottom: 0;
       margin-right: 2.3rem;
+    }
+
+    &:nth-of-type(1) {
+      align-self: flex-start;
+    }
+    &:nth-of-type(2) {
+      align-self: center;
+    }
+    &:nth-of-type(3) {
+      align-self: flex-end;
     }
   }
 `;
