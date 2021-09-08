@@ -12,6 +12,7 @@ const TextSection = styled.section`
   }
   p {
     line-height: 1.75;
+    color: var(--grey-magenta-dark);
   }
   grid-area: main;
 
