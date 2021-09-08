@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { RatingsData } from "../content/content";
-import { ReactComponent as Star } from "../assets/img/icon-star.svg";
 
 const RatingsSection = styled.section`
   grid-area: "ratings";
@@ -16,7 +15,7 @@ const Rating = styled.div`
   align-items: center;
 
   .stars-container {
-    svg:not(:last-of-type) {
+    img:not(:last-of-type) {
       margin-right: 8px;
     }
     margin-bottom: 5px;
@@ -36,7 +35,7 @@ export const Ratings = () => {
         <Rating key={id}>
           <div className="stars-container">
             {[...Array(stars)].map((e, index) => (
-              <Star key={index} />
+              <img src="/img/icon-star.svg" key={index} alt="star" />
             ))}
           </div>
           <p className="rating">{rating}</p>
