@@ -7,6 +7,7 @@ const Text = styled.section`
     color: var(--magenta-dark);
     font-size: 2em;
     line-height: 1.2;
+    margin-bottom: var(--margin-y);
   }
   p {
     line-height: 1.8;
