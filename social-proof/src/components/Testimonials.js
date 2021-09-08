@@ -1,8 +1,17 @@
 import styled from "styled-components";
 import { TestimonialsData } from "../content/content";
+import breakpoints from "../styles/breakpoints";
 
 const TestimonialSection = styled.section`
   grid-area: testimonials;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and ${breakpoints.lg} {
+    flex-direction: row;
+    display: flex;
+    min-height: 25.5em;
+  }
 `;
 
 const Testimonial = styled.div`
@@ -11,6 +20,7 @@ const Testimonial = styled.div`
   color: var(--grey-magenta-light);
   font-weight: 500;
   padding: calc(1.5 * var(--padding-y)) var(--padding-x);
+  width: 100%;
 
   .buyer-info {
     display: flex;
@@ -43,6 +53,24 @@ const Testimonial = styled.div`
   .testimonial {
     font-size: 0.92em;
     line-height: 1.8;
+  }
+
+  @media screen and ${breakpoints.lg} {
+    :not(:last-of-type) {
+      margin-bottom: 0;
+    }
+    :not(:last-of-type) {
+      margin-right: 2rem;
+    }
+    &:nth-of-type(1) {
+      align-self: flex-start;
+    }
+    &:nth-of-type(2) {
+      align-self: center;
+    }
+    &:nth-of-type(3) {
+      align-self: flex-end;
+    }
   }
 `;
 
