@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
+import breakpoints from "../styles/breakpoints";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -45,7 +46,27 @@ const GlobalStyle = createGlobalStyle`
     background-repeat: no-repeat;
   }
   #root {
-
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+  }
+  @media screen and ${breakpoints.lg} {
+    body {
+      background-image: 
+      url('/img/bg-pattern-top-desktop.svg'), 
+      url('/img/bg-pattern-bottom-desktop.svg');
+    background-position:
+      top left,
+      bottom right;
+    background-repeat: no-repeat;
+    }
   }
 `;
 
