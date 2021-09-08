@@ -7,10 +7,13 @@ const TestimonialSection = styled.section`
   display: flex;
   flex-direction: column;
 
-  @media screen and ${breakpoints.lg} {
+  @media screen and ${breakpoints.sm} {
     flex-direction: row;
-    display: flex;
-    height: 25.5em;
+    flex-wrap: wrap;
+  }
+
+  @media screen and ${breakpoints.lg} {
+    height: 30em;
   }
 `;
 
@@ -20,7 +23,7 @@ const Testimonial = styled.div`
   color: var(--grey-magenta-light);
   font-weight: 500;
   padding: calc(1.5 * var(--padding-y)) var(--padding-x);
-  width: 100%;
+  flex: 30%;
 
   .buyer-info {
     display: flex;
@@ -55,13 +58,16 @@ const Testimonial = styled.div`
     line-height: 1.8;
   }
 
-  @media screen and ${breakpoints.lg} {
+  @media screen and ${breakpoints.sm} {
     :not(:last-of-type) {
       margin-bottom: 0;
     }
     :not(:last-of-type) {
       margin-right: 2rem;
     }
+  }
+
+  @media screen and ${breakpoints.lg} {
     &:nth-of-type(1) {
       align-self: flex-start;
     }
