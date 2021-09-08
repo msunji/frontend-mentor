@@ -5,6 +5,7 @@ const StyledFooter = styled.footer`
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: var(--padding-y) 0;
 `;
 
 export const Footer = () => {
