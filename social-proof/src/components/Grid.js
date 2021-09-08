@@ -3,7 +3,7 @@ import breakpoints from "../styles/breakpoints";
 
 export const Grid = styled.main`
   width: 85%;
-  max-width: 1100px;
+  max-width: 1110px;
   margin: calc(3 * var(--margin-y)) auto;
   padding: 0 var(--padding-x);
   display: grid;
