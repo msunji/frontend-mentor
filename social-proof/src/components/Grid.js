@@ -6,4 +6,5 @@ export const Grid = styled.main`
   // border: 1px solid red;
   margin: calc(3 * var(--margin-y)) auto;
   display: grid;
+  grid-template-rows: repeat(3, auto);
 `;
