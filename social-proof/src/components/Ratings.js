@@ -6,6 +6,7 @@ const RatingsSection = styled.section`
   grid-area: ratings;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 `;
 
 const Rating = styled.div`

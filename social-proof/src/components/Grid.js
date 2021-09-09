@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import breakpoints from "../styles/breakpoints";
 
-export const Grid = styled.main`
+export const Grid = styled.div`
   width: 85%;
   max-width: 1110px;
   margin: calc(3 * var(--margin-y)) auto;
