@@ -4,16 +4,13 @@ import breakpoints from "../styles/breakpoints";
 
 const TestimonialSection = styled.section`
   grid-area: testimonials;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 1rem;
+  grid-template-column: 1fr;
 
   @media screen and ${breakpoints.sm} {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  @media screen and ${breakpoints.lg} {
-    height: 30em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 5px) min-content repeat(1, 5px);
   }
 `;
 
@@ -49,33 +46,20 @@ const Testimonial = styled.div`
     }
   }
 
-  :not(:last-of-type) {
-    margin-bottom: 1.3rem;
-  }
-
   .testimonial {
     font-size: 0.92em;
     line-height: 1.8;
   }
 
   @media screen and ${breakpoints.sm} {
-    :not(:last-of-type) {
-      margin-bottom: 0;
-    }
-    :not(:last-of-type) {
-      margin-right: 2rem;
-    }
-  }
-
-  @media screen and ${breakpoints.lg} {
     &:nth-of-type(1) {
-      align-self: flex-start;
+      grid-row: 1 / span 3;
     }
     &:nth-of-type(2) {
-      align-self: center;
+      grid-row: 2 / span 3;
     }
     &:nth-of-type(3) {
-      align-self: flex-end;
+      grid-row: 3 / span 4;
     }
   }
 `;
