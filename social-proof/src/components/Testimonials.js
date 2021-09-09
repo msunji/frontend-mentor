@@ -10,7 +10,7 @@ const TestimonialSection = styled.section`
 
   @media screen and ${breakpoints.sm} {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 5px) min-content repeat(1, 5px);
+    grid-template-rows: 5px 5px min-content 5px 0px;
   }
 `;
 
@@ -59,7 +59,7 @@ const Testimonial = styled.div`
       grid-row: 2 / span 3;
     }
     &:nth-of-type(3) {
-      grid-row: 3 / span 4;
+      grid-row: 3 / span 3;
     }
   }
 `;
