@@ -6,7 +6,7 @@ const TextSection = styled.section`
   h1 {
     font-weight: 700;
     color: var(--magenta-dark);
-    font-size: 2em;
+    font-size: clamp(2.2rem, 1.5162rem + 2.973vw, 3.3rem);
     line-height: 1.05;
     margin-bottom: 1.5rem;
   }
@@ -18,9 +18,6 @@ const TextSection = styled.section`
 
   @media screen and ${breakpoints.lg} {
     text-align: left;
-    h1 {
-      font-size: 3.3em;
-    }
   }
 `;
 
