@@ -19,6 +19,13 @@ export const Grid = styled.main`
   }
 
   @media screen and ${breakpoints.lg} {
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "main"
+      "ratings"
+      "testimonials testimonials";
+  }
+  @media screen and ${breakpoints.xl} {
     grid-template-columns: 1.8fr 2fr;
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
