@@ -7,7 +7,7 @@ export const Grid = styled.main`
   margin: calc(3 * var(--margin-y)) auto;
   padding: 0 var(--padding-x);
   display: grid;
-  gap: 3rem;
+  gap: 2rem;
   grid-template-rows: repeat(3, auto);
   grid-template-areas:
     "main"
@@ -15,11 +15,11 @@ export const Grid = styled.main`
     "testimonials";
 
   section {
-    padding: var(--padding-y) 0;
+    padding: calc(var(--padding-y) / 2) 0;
   }
 
   @media screen and ${breakpoints.lg} {
-    grid-template-columns: 1.4fr 2fr;
+    grid-template-columns: 1.8fr 2fr;
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
       "main ratings"
