@@ -5,7 +5,7 @@ export const Grid = styled.div`
   width: 85%;
   max-width: 1110px;
   margin: calc(3 * var(--margin-y)) auto;
-  padding: 0 var(--padding-x);
+  // padding: 0 var(--padding-x);
   display: grid;
   gap: 2rem;
   grid-template-rows: repeat(3, auto);
