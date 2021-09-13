@@ -1,5 +1,3 @@
 {
-  "dependencies": {
-    "@svgr/parcel-plugin-svgr": "^5.5.0"
-  }
+  "dependencies": {}
 }
