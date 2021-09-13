@@ -1,0 +1,31 @@
+{
+  "name": "sunnyside-agency-landing",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challenge Solution",
+  "source": "src/index.js",
+  "main": "index.js",
+  "author": "Marge Consunji.",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "serve": "parcel public/index.html"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "babel-plugin-styled-components": "^1.13.2",
+    "parcel": "^2.0.0-rc.0",
+    "prettier": "2.4.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.1",
+    "styled-reset": "^4.3.4"
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  }
+}
