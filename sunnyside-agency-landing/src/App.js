@@ -1,10 +1,16 @@
 import React from 'react';
+import { Header, Footer } from './components/layout';
+import { LandingGrid, Testimonials } from './components';
 
 const App = () => {
   return (
-    <>  
-      <h1>Test</h1>
-      <p>Test</p>
+    <> 
+      <Header />
+      <main>
+      <LandingGrid />
+      <Testimonials />
+      </main>
+      <Footer />
     </>
   )
 }
