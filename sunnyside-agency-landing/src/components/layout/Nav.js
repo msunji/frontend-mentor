@@ -12,6 +12,11 @@ const NavContainer = styled(Container)`
   ul {
     display: flex;
     align-items: center;
+    font-size: 0.9em;
+
+    li {
+      margin-left: 2rem;
+    }
   }
 `;
 
