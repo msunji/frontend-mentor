@@ -7,7 +7,8 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --red-soft: hsl(7, 99%, 70%);
     --yellow: hsl(51, 100%, 49%);
-    --cyan-dark-desat: ;
+    --cyan: hsl(167, 44%, 70%);
+    --cyan-dark-desat: hsl(167, 40%, 24%);
     --cyan-dark-moderate: hsl(168, 34%, 41%);
     --blue-dark: hsl(198, 62%, 26%);
     --blue-dark-desat: hsl(212, 27%, 19%);
@@ -37,8 +38,8 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     font-size: 18px;
     line-height: 1.7;
-    font-weight: 400;
     font-family: var(--barlow);
+    letter-spacing: 0.9px;
   }
 
 `;
