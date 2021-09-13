@@ -4,7 +4,7 @@ You'll find my solutions to [Frontend Mentor](https://www.frontendmentor.io/) ch
 [View Compilation](https://agitated-lewin-aa41a1.netlify.app/) | [View Compilation Repo](https://github.com/msunji/fe-mentor-compilation)
 
 ## Todo's
--[x] Stats Preview Card component
--[x] Single Price Grid component
--[x] Social Proof component
--[ ] Sunnyside Agency landing page
+- [x] Stats Preview Card component
+- [x] Single Price Grid component
+- [x] Social Proof component
+- [ ] Sunnyside Agency landing page
