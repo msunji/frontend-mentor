@@ -17,6 +17,8 @@ const GlobalStyle = createGlobalStyle`
     --white: hsl(0, 0%, 100%);
     --barlow: 'Barlow', sans-serif;
     --fraunces: 'Fraunces', serif;
+    --padding-y: 2rem;
+    --padding-x: 2rem;
   }
 
   *,
