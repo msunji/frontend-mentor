@@ -1,7 +1,7 @@
 import React from 'react';
 import GlobalStyle from './styles/globalStyles';
 import { Nav, Footer } from './components/layout';
-import { Hero, LandingGrid, Testimonials } from './components';
+import { Hero, LandingGrid, Testimonials, PhotoGrid } from './components';
 
 const App = () => {
   return (
@@ -12,6 +12,7 @@ const App = () => {
         <Hero />
         <LandingGrid />
         <Testimonials />
+        <PhotoGrid />
       </main>
       <Footer />
     </>
