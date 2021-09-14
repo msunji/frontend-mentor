@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --red-soft: hsl(7, 99%, 70%);
     --yellow: hsl(51, 100%, 49%);
+    --bright-blue: hsl(200, 100%, 62%);
     --cyan: hsl(167, 44%, 70%);
     --cyan-dark-desat: hsl(167, 40%, 24%);
     --cyan-dark-moderate: hsl(168, 34%, 41%);
