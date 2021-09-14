@@ -15,7 +15,7 @@ const StyledFooter = styled.footer`
       fill: var(--cyan-dark-desat);
       opacity: 0.85;
     }
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.8rem;
   }
 
   .attribution {
