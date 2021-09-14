@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logo from '../../assets/img/logo.svg';
+import Logo from '/public/img/logo.svg';
 import { FaFacebookSquare, FaInstagram, FaTwitter, FaPinterest } from 'react-icons/fa';
 import { Container } from './Container';
 
