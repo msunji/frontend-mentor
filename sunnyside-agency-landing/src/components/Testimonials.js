@@ -50,7 +50,7 @@ const TestimonialPhoto = styled.img`
 
 const TestimonialGrid = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
 `;
 
 export const Testimonials = () => {
