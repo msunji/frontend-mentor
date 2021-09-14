@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
     --blue-greyish: hsl(210, 4%, 67%);
     --blue-greyish-dark: hsl(232, 10%, 55%);
     --blue-greyish-darker: hsl(213, 9%, 39%);
+    --blue-black: hsl(214, 26%, 19%);
     --white: hsl(0, 0%, 100%);
     --barlow: 'Barlow', sans-serif;
     --fraunces: 'Fraunces', serif;
@@ -41,6 +42,10 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.7;
     font-weight: 600;
     font-family: var(--barlow);
+  }
+
+  h1,h2,h3 {
+    font-family: var(--fraunces);
   }
 
 `;
