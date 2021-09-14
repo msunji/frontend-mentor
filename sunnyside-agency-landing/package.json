@@ -15,6 +15,7 @@
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
     "@babel/preset-react": "^7.14.5",
+    "@parcel/transformer-image": "2.0.0-rc.0",
     "@parcel/transformer-svg-react": "^2.0.0-nightly.1739",
     "babel-plugin-styled-components": "^1.13.2",
     "parcel": "^2.0.0-rc.0",
