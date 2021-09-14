@@ -38,8 +38,8 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     font-size: 18px;
     line-height: 1.7;
+    font-weight: 600;
     font-family: var(--barlow);
-    letter-spacing: 0.9px;
   }
 
 `;
