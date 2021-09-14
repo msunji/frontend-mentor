@@ -18,6 +18,7 @@
     "@parcel/transformer-svg-react": "^2.0.0-nightly.1739",
     "babel-plugin-styled-components": "^1.13.2",
     "parcel": "^2.0.0-rc.0",
+    "parcel-plugin-static-files-copy": "^2.6.0",
     "prettier": "2.4.0"
   },
   "dependencies": {
@@ -30,5 +31,9 @@
   },
   "resolutions": {
     "styled-components": "^5"
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
   }
 }
