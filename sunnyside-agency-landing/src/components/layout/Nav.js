@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import { Container } from './Container';
 import NavLogo from '/public/img/logo.svg';
@@ -28,6 +28,11 @@ const NavContainer = styled(Container)`
     position:absolute;
     top: 115px;
     width: inherit;
+    display: none;
+
+    &.open {
+      display: block;
+    }
 
     &::before {
       content: '';
@@ -44,7 +49,6 @@ const NavContainer = styled(Container)`
   }
 
   ul {
-    // display: none;
     position: relative;
     width: 100%;
     background: var(--white);
@@ -54,6 +58,8 @@ const NavContainer = styled(Container)`
     align-items: center;
     justify-content: space-around;
     padding: var(--padding-y);
+
+
 
     a,
     a:visited {
@@ -67,6 +73,7 @@ const NavContainer = styled(Container)`
     .nav-links-container {
       position: static;
       width: auto;
+      display: block;
 
       &::before {
         display: none;
@@ -82,7 +89,7 @@ const NavContainer = styled(Container)`
       background: transparent;
       flex-direction: row;
       padding: 0;
-      
+
       li {
         margin-left: 2rem;
   
@@ -124,10 +131,17 @@ const ContactButton = styled.button`
 
 const MobileToggle = styled.div`
   width: 24px;
-  height: 18px;
+  height: 23px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  transition: opacity 0.4s ease;
+
+  &:hover, &:active {
+    opacity: 0.5;
+  }
+
+  opacity: ${props => props.isOpen ? 0.5 : 1};
 
   span {
     height: 2px;
@@ -142,29 +156,35 @@ const MobileToggle = styled.div`
 `;
 
 export const Nav = () => {
+  const mobileRef = useRef(null);
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
+  const handleMobileMenu = () => setOpenMobileMenu(!openMobileMenu);
+  const closeMobileMenu = () => setOpenMobileMenu(false);
+
   return (
     <StyledNav>
       <NavContainer>
         <a className="logo-container" href="#">
           <NavLogo />
         </a>
-        <MobileToggle>
+        <MobileToggle onClick={handleMobileMenu} isOpen={openMobileMenu}>
           <span></span>          
           <span></span>
           <span></span>
         </MobileToggle>
-        <div className="nav-links-container">
+        <div className={`nav-links-container ${openMobileMenu ? 'open' : ''}`} ref={mobileRef} onClick={handleMobileMenu}>
           <ul>
-            <li>
+            <li onClick={closeMobileMenu}>
               <a href="#">About</a>
             </li>
-            <li>
+            <li onClick={closeMobileMenu}>
               <a href="#">Services</a>
             </li>
-            <li>
+            <li onClick={closeMobileMenu}>
               <a href="#">Projects</a>
             </li>
-            <li>
+            <li onClick={closeMobileMenu}>
               <a href="#">
                 <ContactButton>
                   Contact
