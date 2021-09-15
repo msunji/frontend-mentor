@@ -56,13 +56,8 @@ const Testimonial = styled.div`
     }
     &:not(:last-of-type) {
       margin-bottom: 0rem;
+      margin-right: 1rem;
     } 
-
-    // Add gaps in between instead {
-      &:not(:last-of-type) {
-        margin-right: 1rem;
-      }
-    }
   }
 `;
 
