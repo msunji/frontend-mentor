@@ -20,8 +20,42 @@ const NavContainer = styled(Container)`
   justify-content: space-between;
   padding: calc(1.28 * var(--padding-y)) 0;
 
+  .logo-container {
+    display: flex;
+  }
+
+  .nav-links-container {
+    position:absolute;
+    top: 115px;
+    width: inherit;
+
+  }
+
   ul {
-    display: none;
+    // display: none;
+    position: relative;
+    width: 100%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 305px;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--padding-y);
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border-top: 24px solid transparent;
+      border-right: 24px solid white;
+      border-bottom: 24px solid transparent;
+      border-left: 24px solid transparent;
+      top: -24px;
+      right: 0;
+      // background: var(--white);
+    }
   }
 
   @media screen and ${breakpoints.lg} {
@@ -68,14 +102,14 @@ const ContactButton = styled.button`
 `;
 
 const MobileToggle = styled.div`
-  width: 35px;
-  height: 30px;
+  width: 24px;
+  height: 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
   span {
-    height: 3px;
+    height: 2px;
     width: 100%;
     background: var(--white);
     display: block;
@@ -98,24 +132,26 @@ export const Nav = () => {
           <span></span>
           <span></span>
         </MobileToggle>
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">
-              <ContactButton>
-                Contact
-              </ContactButton>
-            </a>
-          </li>
-        </ul>
+        <div className="nav-links-container">
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">
+                <ContactButton>
+                  Contact
+                </ContactButton>
+              </a>
+            </li>
+          </ul>
+        </div>
       </NavContainer>
     </StyledNav>
   )
