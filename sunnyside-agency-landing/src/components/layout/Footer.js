@@ -1,7 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '/public/img/logo.svg';
-import { FaFacebookSquare, FaInstagram, FaTwitter, FaPinterest } from 'react-icons/fa';
+import {
+  FaFacebookSquare,
+  FaInstagram,
+  FaTwitter,
+  FaPinterest,
+} from 'react-icons/fa';
 import { Container } from './Container';
 
 const StyledFooter = styled.footer`
@@ -40,15 +45,30 @@ const FooterNavLinks = styled(FooterLinks)`
   li:not(:last-of-type) {
     margin-right: 4rem;
   }
+
+  a,
+  a:visited {
+    text-decoration: none;
+    color: var(--cyan-dark-moderate);
+    transition: color 0.5s ease;
+  }
+
+  a:hover,
+  a:active {
+    color: var(--white);
+  }
 `;
 
 const FooterSocMedLinks = styled(FooterLinks)`
   margin-bottom: 4rem;
+
   svg {
     transform: scale(1.4);
-    path {
-      fill: var(--cyan-dark-desat);
-      opacity: 0.85;
+    fill: var(--cyan-dark-desat);
+    opacity: 0.85;
+    transition: fill 0.5s ease;
+    &:hover, &:active {
+      fill: var(--white);
     }
   }
   li:not(:last-of-type) {
@@ -66,15 +86,37 @@ export const Footer = () => {
           <Logo className="footer-logo" />
         </div>
         <FooterNavLinks>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
         </FooterNavLinks>
         <FooterSocMedLinks>
-          <li><FaFacebookSquare /></li>
-          <li><FaInstagram /></li>
-          <li><FaTwitter /></li>
-          <li><FaPinterest /></li>
+          <li>
+            <a href="#">
+              <FaFacebookSquare />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <FaInstagram />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <FaTwitter />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <FaPinterest />
+            </a>
+          </li>
         </FooterSocMedLinks>
         <div className="attribution">
           Challenge by{' '}
