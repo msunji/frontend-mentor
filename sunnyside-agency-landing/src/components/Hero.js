@@ -8,6 +8,9 @@ import HeroImgMobile from '/public/img/mobile/image-header.jpg';
 // Import down arrow
 import DownArrow from '/public/img/icon-arrow-down.svg';
 
+// Import breakpoints
+import breakpoints from '../styles/breakpoints';
+
 const HeroSection = styled.section`
   position: relative;
   width: 100%;
@@ -38,7 +41,7 @@ const HeroSection = styled.section`
   }
 
 
-  @media screen and (min-width: 600px) {
+  @media screen and ${breakpoints.lg} {
     background: var(--bright-blue) url(${props => props.desktop});
     background-size: 120%;
     background-repeat: no-repeat;
