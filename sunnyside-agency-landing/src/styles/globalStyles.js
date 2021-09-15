@@ -54,6 +54,10 @@ const GlobalStyle = createGlobalStyle`
   p {
     letter-spacing: -0.13px;
   }
+  a,
+  a:visited {
+    text-decoration: none;
+  }
 `;
 
 export default GlobalStyle;
