@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     overflow-x: hidden;
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.6;
     font-weight: 600;
     font-family: var(--barlow);
   }
