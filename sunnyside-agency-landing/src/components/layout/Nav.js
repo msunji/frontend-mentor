@@ -54,11 +54,12 @@ const NavContainer = styled(Container)`
     width: 100%;
     background: var(--white);
     display: flex;
-    height: 305px;
+    height: 350px;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding: var(--padding-y);
+    font-size: 1.1em;
 
     a,
     a:visited {
