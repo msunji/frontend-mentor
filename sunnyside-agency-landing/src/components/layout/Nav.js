@@ -29,6 +29,18 @@ const NavContainer = styled(Container)`
     top: 115px;
     width: inherit;
 
+    &::before {
+      content: '';
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border-top: 24px solid transparent;
+      border-right: 24px solid white;
+      border-bottom: 24px solid transparent;
+      border-left: 24px solid transparent;
+      top: -24px;
+      right: 0;
+    }
   }
 
   ul {
@@ -43,20 +55,6 @@ const NavContainer = styled(Container)`
     justify-content: space-around;
     padding: var(--padding-y);
 
-    &::before {
-      content: '';
-      position: absolute;
-      width: 0px;
-      height: 0px;
-      border-top: 24px solid transparent;
-      border-right: 24px solid white;
-      border-bottom: 24px solid transparent;
-      border-left: 24px solid transparent;
-      top: -24px;
-      right: 0;
-      // background: var(--white);
-    }
-
     a,
     a:visited {
       color: var(--blue-greyish-dark);
@@ -66,11 +64,25 @@ const NavContainer = styled(Container)`
   @media screen and ${breakpoints.lg} {
     max-width: 1500px;
 
+    .nav-links-container {
+      position: static;
+      width: auto;
+
+      &::before {
+        display: none;
+      }
+    }
+
     ul {
       display: flex;
+      position: static;
+      height: auto;
       align-items: center;
       font-size: 0.9em;
-  
+      background: transparent;
+      flex-direction: row;
+      padding: 0;
+      
       li {
         margin-left: 2rem;
   
