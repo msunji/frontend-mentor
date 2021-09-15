@@ -1,6 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container } from './Container';
+import NavLogo from '/public/img/logo.svg';
+
+const StyledNav = styled.nav`
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+`;
 
 const NavContainer = styled(Container)`
   width: 90%;
@@ -8,6 +17,11 @@ const NavContainer = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: calc(1.28 * var(--padding-y)) 0;
+
+  svg {
+    transform: scale(1.371);
+  }
 
   ul {
     display: flex;
@@ -16,32 +30,38 @@ const NavContainer = styled(Container)`
 
     li {
       margin-left: 2rem;
+
+      a,
+      a:visited {
+        letter-spacing: -0.13px;
+        color: var(--white);
+      }
     }
   }
 `;
 
 export const Nav = () => {
   return (
-    <nav>
+    <StyledNav>
       <NavContainer>
         <div>
-          logo
+          <NavLogo />
         </div>
         <ul>
           <li>
-            About
+            <a href="#">About</a>
           </li>
           <li>
-            Services
+            <a href="#">Services</a>
           </li>
           <li>
-            Projects
+            <a href="#">Projects</a>
           </li>
           <li>
-            Contact
+            <a href="#">Contact</a>
           </li>
         </ul>
       </NavContainer>
-    </nav>
+    </StyledNav>
   )
 }
