@@ -13,14 +13,27 @@ import OrangeBgMobile from '/public/img/mobile/image-photography.jpg';
 
 const LandingGridSection = styled.section`
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: 312px min-content 312px min-content repeat(2, minmax(33.3em, 1fr));
+  grid-remplate-rows: repeat(6, 1fr);
+  grid-template-areas: 
+    "egg"
+    "transform"
+    "cup"
+    "stand-out"
+    "cherry"
+    "orange";
+
+  // grid-template-rows: repeat(3, 1fr);
+  // grid-template-columns: repeat(2, 1fr);
 `;
 
 const GridSquare = styled.div`
-  position: relative;
-  padding-bottom: 83%;
-  height: 0;
+  // position: relative;
+  // padding-bottom: 83%;
+  // height: 0;
+
+  grid-area: ${props => props.gridName};
 
   h2 {
     color: var(--blue-black);
@@ -37,16 +50,18 @@ const GridSquare = styled.div`
   }
 
   .content-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: calc(2*var(--padding-y)) 0;
 
     .content {
-      width: 70%;
+      width: 80%;
+      text-align: center;
     }
   }
   // aspect-ratio property works a treat, but has no IE support
@@ -57,6 +72,8 @@ const GridSquareBg = styled(GridSquare)`
   background: ${(props) => `var(--${props.color})`}
     url(${(props) => props.mobile});
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   @media screen and (min-width: 600px) {
     background: ${(props) => `var(--${props.color})`}
@@ -67,9 +84,9 @@ const GridSquareBg = styled(GridSquare)`
 
 const GridSquareBgText = styled(GridSquareBg)`
   .bgtext-content-container {
-    position: absolute;
-    top: 0;
-    left: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -156,7 +173,7 @@ const GridLink = styled.a`
 export const LandingGrid = () => {
   return (
     <LandingGridSection>
-      <GridSquare>
+      <GridSquare gridName="transform">
         <div className="content-container">
           <div className="content">
             <h2>
@@ -174,16 +191,18 @@ export const LandingGrid = () => {
         </div>
       </GridSquare>
       <GridSquareBg
+        gridName="egg"
         color="yellow"
         desktop={EggBgDesktop}
         mobile={EggBgMobile}
       ></GridSquareBg>
       <GridSquareBg
+        gridName="cup"
         color="red-soft"
         desktop={CupBgDesktop}
         mobile={CupBgMobile}
       ></GridSquareBg>
-      <GridSquare>
+      <GridSquare gridName="stand-out">
         <div className="content-container">
           <div className="content">
             <h2>
@@ -201,6 +220,7 @@ export const LandingGrid = () => {
         </div>
       </GridSquare>
       <GridSquareBgText
+        gridName="cherry"
         headerColor="cyan-dark-desat"
         textColor="cyan-dark-desat"
         color="cyan"
@@ -219,6 +239,7 @@ export const LandingGrid = () => {
         </div>
       </GridSquareBgText>
       <GridSquareBgText
+        gridName="orange"
         headerColor="blue-dark"
         textColor="blue-dark"
         color="bright-blue"
