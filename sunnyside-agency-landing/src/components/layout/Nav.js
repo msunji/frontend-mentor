@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container } from './Container';
 import NavLogo from '/public/img/logo.svg';
+// Import breakpoints
+import breakpoints from '../../styles/breakpoints';
 
 const StyledNav = styled.nav`
   position: absolute;
@@ -24,18 +26,24 @@ const NavContainer = styled(Container)`
   }
 
   ul {
-    display: flex;
-    align-items: center;
-    font-size: 0.9em;
+    display: none;
+  }
 
-    li {
-      margin-left: 2rem;
-
-      a,
-      a:visited {
-        color: var(--blue-black);
-        letter-spacing: -0.13px;
-        color: var(--white);
+  @media screen and ${breakpoints.lg} {
+    ul {
+      display: flex;
+      align-items: center;
+      font-size: 0.9em;
+  
+      li {
+        margin-left: 2rem;
+  
+        a,
+        a:visited {
+          color: var(--blue-black);
+          letter-spacing: -0.13px;
+          color: var(--white);
+        }
       }
     }
   }
@@ -67,7 +75,9 @@ export const Nav = () => {
     <StyledNav>
       <NavContainer>
         <div>
-          <NavLogo />
+          <a href="#">
+            <NavLogo />
+          </a>
         </div>
         <ul>
           <li>
