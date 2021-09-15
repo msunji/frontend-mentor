@@ -15,21 +15,18 @@ const StyledNav = styled.nav`
 
 const NavContainer = styled(Container)`
   width: 90%;
-  max-width: 1500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: calc(1.28 * var(--padding-y)) 0;
-
-  svg {
-    transform: scale(1.371);
-  }
 
   ul {
     display: none;
   }
 
   @media screen and ${breakpoints.lg} {
+    max-width: 1500px;
+
     ul {
       display: flex;
       align-items: center;
@@ -70,15 +67,37 @@ const ContactButton = styled.button`
   }
 `;
 
+const MobileToggle = styled.div`
+  width: 35px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  span {
+    height: 3px;
+    width: 100%;
+    background: var(--white);
+    display: block;
+  }
+
+  @media screen and ${breakpoints.lg} {
+    display: none;
+  }
+`;
+
 export const Nav = () => {
   return (
     <StyledNav>
       <NavContainer>
-        <div>
-          <a href="#">
-            <NavLogo />
-          </a>
-        </div>
+        <a className="logo-container" href="#">
+          <NavLogo />
+        </a>
+        <MobileToggle>
+          <span></span>          
+          <span></span>
+          <span></span>
+        </MobileToggle>
         <ul>
           <li>
             <a href="#">About</a>
