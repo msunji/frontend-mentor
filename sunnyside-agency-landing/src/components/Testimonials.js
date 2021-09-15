@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container } from './layout';
 import { TestimonialData } from '../content/TestimonialData';
+// Import breakpoints
+import breakpoints from '../styles/breakpoints';
 
 const TestimonialsSection = styled.section`
   padding: calc(3.5 * var(--padding-y)) 0;
@@ -26,6 +28,10 @@ const Testimonial = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
+  &:not(:last-of-type) {
+    margin-bottom: 3rem;
+  }
+
   .testimonial__text {
     margin-bottom: 3rem;
   }
@@ -43,8 +49,20 @@ const Testimonial = styled.div`
     }
   }
 
-  &:not(:last-of-type) {
-    margin-right: 1.8rem;
+  @media screen and ${breakpoints.lg} {
+    // Remove bottom margins from mobile styling
+    &:last-of-type {
+      margin-bottom: 0rem;
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 0rem;
+    } 
+
+    // Add gaps in between instead {
+      &:not(:last-of-type) {
+        margin-right: 1rem;
+      }
+    }
   }
 `;
 
@@ -56,7 +74,11 @@ const TestimonialPhoto = styled.img`
 
 const TestimonialGrid = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  @media screen and ${breakpoints.lg} {
+    flex-direction: row;
+  }
 `;
 
 export const Testimonials = () => {
