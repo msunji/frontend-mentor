@@ -25,13 +25,15 @@ const NavContainer = styled(Container)`
   }
 
   .nav-links-container {
+    top: 120px;
     position:absolute;
-    top: 115px;
     width: inherit;
-    display: none;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: transform 0.5s ease-in-out;
 
     &.open {
-      display: block;
+      transform: scaleY(1);
     }
 
     &::before {
@@ -53,13 +55,11 @@ const NavContainer = styled(Container)`
     width: 100%;
     background: var(--white);
     display: flex;
-    flex-direction: column;
     height: 305px;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding: var(--padding-y);
-
-
 
     a,
     a:visited {
@@ -74,6 +74,7 @@ const NavContainer = styled(Container)`
       position: static;
       width: auto;
       display: block;
+      transform: scaleY(1);
 
       &::before {
         display: none;
