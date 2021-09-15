@@ -83,6 +83,8 @@ const GridSquareBg = styled(GridSquare)`
     background: ${(props) => `var(--${props.color})`}
       url(${(props) => props.desktop});
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 `;
 
