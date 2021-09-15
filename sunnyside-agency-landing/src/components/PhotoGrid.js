@@ -10,6 +10,9 @@ import OrangeMobile from '/public/img/desktop/image-gallery-orange.jpg';
 import ConeMobile from '/public/img/desktop/image-gallery-cone.jpg';
 import SugarcubesMobile from '/public/img/desktop/image-gallery-sugarcubes.jpg';
 
+// Import breakpoints
+import breakpoints from '../styles/breakpoints';
+
 const photos = [
   {
     desktop: BottlesDesktop,
@@ -30,15 +33,23 @@ const photos = [
 ];
 
 const Grid = styled.section`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media screen and ${breakpoints.lg} {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `;
 
 const Photo = styled.div`
-  width: 25%;
-  height: 447px;
+  aspect-ratio: 1/1;
   background: url(${props => props.mobile});
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media screen and ${breakpoints.lg} {
+    aspect-ratio: 0.81;
+  }
 `;
 
 
