@@ -33,7 +33,7 @@ const Testimonial = styled.div`
   }
 
   .testimonial__text {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .person-info {
@@ -50,6 +50,10 @@ const Testimonial = styled.div`
   }
 
   @media screen and ${breakpoints.lg} {
+    .testimonial__text {
+      margin-bottom: 3.5rem;
+    }
+
     // Remove bottom margins from mobile styling
     &:last-of-type {
       margin-bottom: 0rem;
