@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     --blue-greyish: hsl(210, 4%, 67%);
     --blue-greyish-dark: hsl(232, 10%, 55%);
     --blue-greyish-darker: hsl(213, 9%, 39%);
-    --blue-black: hsl(214, 26%, 19%);
+    --blue-black: hsl(212, 27%, 19%);
     --white: hsl(0, 0%, 100%);
     --barlow: 'Barlow', sans-serif;
     --fraunces: 'Fraunces', serif;
@@ -44,10 +44,16 @@ const GlobalStyle = createGlobalStyle`
     font-family: var(--barlow);
   }
 
-  h1,h2,h3 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--fraunces);
   }
 
+  p {
+    letter-spacing: -0.13px;
+  }
 `;
 
 export default GlobalStyle;
