@@ -35,7 +35,7 @@ const Grid = styled.section`
 
 const Photo = styled.div`
   width: 25%;
-  height: 400px;
+  height: 447px;
   background: url(${props => props.mobile});
   background-size: cover;
   background-repeat: no-repeat;
