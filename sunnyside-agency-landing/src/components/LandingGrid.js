@@ -107,6 +107,50 @@ const GridLink = styled.a`
   letter-spacing: 1px;
   color: var(--blue-black);
   text-decoration: none;
+  position: relative;
+  padding-left: 7.5px;
+
+  &:hover,
+  &:active {
+
+    &::before {
+      opacity: 0.25;
+      transition: opacity 1s ease;
+    }
+
+    &::after {
+      width: 108%;
+      transition: all 0.4s ease;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0.83em;
+    content: '';
+    width: 108%;
+    height: 10px;
+    z-index: -2;
+    background: ${props => `var(--${props.color})`};
+    opacity: 0.25;
+    border-radius: 28px;
+    transition: opacity 0.4s ease;
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 0.83em;
+    content: '';
+    width: 0%;
+    height: 10px;
+    z-index: -1;
+    background: ${props => `var(--${props.color})`};
+    opacity: 1;
+    border-radius: 28px;
+    transition: all 0.4s ease;
+  }
 `;
 
 export const LandingGrid = () => {
@@ -125,7 +169,7 @@ export const LandingGrid = () => {
               brands grow fast. Engage your clients through compelling visuals
               that do most of the marketing for you.
             </p>
-            <GridLink href="">Learn More</GridLink>
+            <GridLink color="yellow" href="#">Learn More</GridLink>
           </div>
         </div>
       </GridSquare>
@@ -152,7 +196,7 @@ export const LandingGrid = () => {
               photographers, videographers, and copywriters, we’ll build and
               extend yourbrand in digital places.
             </p>
-            <GridLink href="">Learn More</GridLink>
+            <GridLink color="red-soft" href="#">Learn More</GridLink>
           </div>
         </div>
       </GridSquare>
