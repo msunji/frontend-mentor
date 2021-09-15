@@ -37,6 +37,7 @@ const GlobalStyle = createGlobalStyle`
 
   html,
   body {
+    width: 100%;
     overflow-x: hidden;
     font-size: 18px;
     line-height: 1.6;
