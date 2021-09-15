@@ -13,7 +13,7 @@ const StyledNav = styled.nav`
 
 const NavContainer = styled(Container)`
   width: 90%;
-  max-width: 1200px;
+  max-width: 1500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,10 +33,32 @@ const NavContainer = styled(Container)`
 
       a,
       a:visited {
+        color: var(--blue-black);
         letter-spacing: -0.13px;
         color: var(--white);
       }
     }
+  }
+`;
+
+const ContactButton = styled.button`
+  font-family: var(--fraunces);
+  font-size: 0.83em;
+  font-weight: 700;
+  border-radius: 2em;
+  border: none;
+  background: hsla(0, 0%, 100%, 1);
+  padding: 0.84rem 1.7rem;
+  text-transform: uppercase;
+  line-height: 1.389;
+  letter-spacing: -0.11px;
+  transition: all 0.5s ease;
+
+  &:hover,
+  &:active {
+    background: hsla(0, 0%, 100%, 0.25);
+    color: var(--white); 
+    cursor: pointer;
   }
 `;
 
@@ -58,7 +80,11 @@ export const Nav = () => {
             <a href="#">Projects</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#">
+              <ContactButton>
+                Contact
+              </ContactButton>
+            </a>
           </li>
         </ul>
       </NavContainer>
