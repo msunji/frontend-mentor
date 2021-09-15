@@ -19,7 +19,7 @@ const LandingGridSection = styled.section`
   grid-template-columns: 1fr;
   grid-template-rows: 312px min-content 312px min-content repeat(
       2,
-      minmax(33.3em, 1fr)
+      minmax(33.3em, auto)
     );
   grid-remplate-rows: repeat(6, 1fr);
   grid-template-areas:
@@ -32,7 +32,7 @@ const LandingGridSection = styled.section`
 
   @media screen and ${breakpoints.lg} {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr minmax(11em, 1fr);
     grid-template-areas:
       'transform egg'
       'cup stand-out'
@@ -58,15 +58,15 @@ const GridSquare = styled.div`
   }
 
   .grid-content {
-    display: block;
-    padding: var(--padding-y) var(--padding-x);
+    padding: calc(2*var(--padding-y)) var(--padding-x);
+    text-align: center;
   }
 
-  // aspect-ratio property works a treat, but has no IE support
-  // aspect-ratio: 1.2;
-
   @media screen and ${breakpoints.lg} {
-    aspect-ratio: 6 / 5;
+    .grid-content {
+      text-align: left;
+      padding: calc(2.5*var(--padding-y)) calc(2.5*var(--padding-x));
+    }
   }
 `;
 
@@ -90,6 +90,8 @@ const GridSquareBgText = styled(GridSquareBg)`
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
 
   .bgtext-content {
     width: 60%;
