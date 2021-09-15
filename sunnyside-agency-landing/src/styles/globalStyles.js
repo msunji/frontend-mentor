@@ -57,6 +57,7 @@ const GlobalStyle = createGlobalStyle`
   a,
   a:visited {
     text-decoration: none;
+    color: var(--cyan-dark-desat);
   }
 `;
 
