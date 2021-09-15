@@ -28,12 +28,11 @@ const NavContainer = styled(Container)`
     top: 120px;
     position:absolute;
     width: inherit;
-    transform: scaleY(0);
-    transform-origin: top center;
-    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
 
     &.open {
-      transform: scaleY(1);
+      opacity: 1;
     }
 
     &::before {
@@ -74,7 +73,7 @@ const NavContainer = styled(Container)`
       position: static;
       width: auto;
       display: block;
-      transform: scaleY(1);
+      opacity: 1;
 
       &::before {
         display: none;
@@ -137,6 +136,7 @@ const MobileToggle = styled.div`
   flex-direction: column;
   justify-content: space-around;
   transition: opacity 0.4s ease;
+  cursor: pointer;
 
   &:hover, &:active {
     opacity: 0.5;
