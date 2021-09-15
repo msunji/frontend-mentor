@@ -56,6 +56,11 @@ const NavContainer = styled(Container)`
       right: 0;
       // background: var(--white);
     }
+
+    a,
+    a:visited {
+      color: var(--blue-greyish-dark);
+    }
   }
 
   @media screen and ${breakpoints.lg} {
@@ -86,19 +91,23 @@ const ContactButton = styled.button`
   font-weight: 700;
   border-radius: 2em;
   border: none;
-  background: hsla(0, 0%, 100%, 1);
   padding: 0.84rem 1.7rem;
   text-transform: uppercase;
   line-height: 1.389;
   letter-spacing: -0.11px;
   transition: all 0.5s ease;
+  background: var(--yellow);
+  cursor: pointer;
 
-  &:hover,
-  &:active {
-    background: hsla(0, 0%, 100%, 0.25);
-    color: var(--white); 
-    cursor: pointer;
+  @media screen and ${breakpoints.lg} {
+    background: hsla(0, 0%, 100%, 1);
+    &:hover,
+    &:active {
+      background: hsla(0, 0%, 100%, 0.25);
+      color: var(--white); 
+    }
   }
+
 `;
 
 const MobileToggle = styled.div`
