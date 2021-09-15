@@ -25,6 +25,16 @@ const StyledFooter = styled.footer`
 
   .attribution {
     font-size: 0.9em;
+    a,
+    a:visited {
+      text-decoration: none;
+      transition: color 0.5s ease;
+    }
+  
+    a:hover,
+    a:active {
+      color: var(--white);
+    }
   }
 `;
 
@@ -124,7 +134,7 @@ export const Footer = () => {
             Frontend Mentor
           </a>
           .<br />
-          Coded by <a href="#">Your Name Here</a>.
+          Coded by <a href="https://github.com/msunji">Marge C.</a>
         </div>
       </FooterContainer>
     </StyledFooter>
