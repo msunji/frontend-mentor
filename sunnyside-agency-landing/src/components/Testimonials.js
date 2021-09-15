@@ -4,14 +4,16 @@ import { Container } from './layout';
 import { TestimonialData } from '../content/TestimonialData';
 
 const TestimonialsSection = styled.section`
-  padding: calc(4.5 * var(--padding-y)) 0;
-  h3 {
+  padding: calc(3.5 * var(--padding-y)) 0;
+
+  h4 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
     color: var(--blue-greyish);
     margin-bottom: 4rem;
     font-weight: 900;
+    font-size: 1.1em;
   }
 `;
 
@@ -19,7 +21,10 @@ const Testimonial = styled.div`
   color: var(--blue-greyish-darker);
   flex: 30%;
   text-align: center;
-  line-height: 1.9;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .testimonial__text {
     margin-bottom: 3rem;
@@ -44,8 +49,8 @@ const Testimonial = styled.div`
 
 const TestimonialPhoto = styled.img`
   border-radius: 50%;
-  max-height: 75px;
-  margin-bottom: 3rem;
+  max-height: 72px;
+  margin-bottom: 2rem;
 `;
 
 const TestimonialGrid = styled.div`
@@ -57,11 +62,14 @@ export const Testimonials = () => {
   return (
     <TestimonialsSection>
       <Container>
-        <h3>Client Testimonials</h3>
+        <h4>Client Testimonials</h4>
         <TestimonialGrid>
           {TestimonialData.map(({ name, title, photo, testimonial }) => (
             <Testimonial key={name}>
-              <TestimonialPhoto src={photo} alt={name} />
+              <div>
+                <TestimonialPhoto src={photo} alt={name} />
+              </div>
+
               <p className="testimonial__text">{testimonial}</p>
               <div className="person-info">
                 <p className="person-info__name">{name}</p>
