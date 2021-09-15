@@ -27,7 +27,7 @@ const HeroSection = styled.section`
       color: var(--white);
       text-transform: uppercase;
       letter-spacing: 8.75px;
-      font-size: 3.1em;
+      font-size: clamp(2.2rem, 1.9000rem + 1.5000vw, 3.1rem);
       margin-bottom: 5.4rem;
     }
 
