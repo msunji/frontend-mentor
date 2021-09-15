@@ -34,6 +34,7 @@ const Testimonial = styled.div`
     &__name {
       font-family: var(--fraunces);
       color: var(--blue-black);
+      font-weight: 900;
     }
 
     &__title {
