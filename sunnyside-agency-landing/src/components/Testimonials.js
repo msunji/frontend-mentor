@@ -29,11 +29,11 @@ const Testimonial = styled.div`
   justify-content: space-between;
 
   &:not(:last-of-type) {
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
   }
 
   .testimonial__text {
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
   }
 
   .person-info {
@@ -68,7 +68,7 @@ const Testimonial = styled.div`
 const TestimonialPhoto = styled.img`
   border-radius: 50%;
   max-height: 72px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 `;
 
 const TestimonialGrid = styled.div`
