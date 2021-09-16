@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { Container } from './Container';
 import NavLogo from '/public/img/logo.svg';
@@ -25,7 +25,7 @@ const NavContainer = styled(Container)`
 
     svg {
       transition: opacity 0.5s ease;
-      
+
       &:hover,
       &:active {
         opacity: 0.5;
@@ -33,10 +33,22 @@ const NavContainer = styled(Container)`
     }
   }
 
-  .nav-links-container {
+  ul {
+    position: absolute;
     top: 120px;
-    position:absolute;
-    width: inherit;
+    left: 50%;
+    margin-left: -45%;
+    width: 90%;
+    background: var(--white);
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--padding-y);
+    font-size: 1.1em;
+    z-index: 2;
+
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
 
@@ -56,53 +68,41 @@ const NavContainer = styled(Container)`
       top: -24px;
       right: 0;
     }
-  }
-
-  ul {
-    position: relative;
-    width: 100%;
-    background: var(--white);
-    display: flex;
-    height: 350px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: var(--padding-y);
-    font-size: 1.1em;
 
     a,
     a:visited {
       color: var(--blue-greyish-dark);
+      transition: opacity 0.5s ease;
+    }
+
+    a:not(.button):hover,
+    a:not(.button):active {
+      opacity: 0.5;
     }
   }
 
   @media screen and ${breakpoints.lg} {
     max-width: 1500px;
 
-    .nav-links-container {
+    ul {
+      display: flex;
+      justify-content: space-between;
       position: static;
+      flex-direction: row;
       width: auto;
-      display: block;
+      height: auto;
       opacity: 1;
+      align-items: center;
+      font-size: 0.9em;
+      background: transparent;
+      padding: 0;
 
       &::before {
         display: none;
       }
-    }
-
-    ul {
-      display: flex;
-      position: static;
-      height: auto;
-      align-items: center;
-      font-size: 0.9em;
-      background: transparent;
-      flex-direction: row;
-      padding: 0;
 
       li {
-        margin-left: 2rem;
-  
+
         a,
         a:visited {
           color: var(--blue-black);
@@ -130,19 +130,23 @@ const ContactButton = styled.button`
   text-transform: uppercase;
   line-height: 1.389;
   letter-spacing: -0.11px;
-  transition: all 0.5s ease;
+  transition: background 0.5s ease;
   background: var(--yellow);
   cursor: pointer;
+
+  &:hover,
+  &:active {
+    background: hsla(51, 100%, 49%, 0.5);
+  }
 
   @media screen and ${breakpoints.lg} {
     background: hsla(0, 0%, 100%, 1);
     &:hover,
     &:active {
       background: hsla(0, 0%, 100%, 0.25);
-      color: var(--white); 
+      color: var(--white);
     }
   }
-
 `;
 
 const MobileToggle = styled.div`
@@ -154,11 +158,12 @@ const MobileToggle = styled.div`
   transition: opacity 0.4s ease;
   cursor: pointer;
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     opacity: 0.5;
   }
 
-  opacity: ${props => props.isOpen ? 0.5 : 1};
+  opacity: ${(props) => (props.isOpen ? 0.5 : 1)};
 
   span {
     height: 2px;
@@ -173,8 +178,24 @@ const MobileToggle = styled.div`
 `;
 
 export const Nav = () => {
-  const mobileRef = useRef(null);
+  const mobileRef = useRef();
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
+  useEffect(() => {
+    const clickOutside = (e) => {
+      console.log(e.target);
+      if (mobileRef.current && mobileRef.current.contains(e.target)) {
+        return;
+      }
+      setOpenMobileMenu(false);
+    };
+    document.body.addEventListener('click', clickOutside);
+
+    // Cleanup
+    return () => {
+      document.body.removeEventListener('click', clickOutside);
+    };
+  }, []);
 
   const handleMobileMenu = () => setOpenMobileMenu(!openMobileMenu);
   const closeMobileMenu = () => setOpenMobileMenu(false);
@@ -182,16 +203,17 @@ export const Nav = () => {
   return (
     <StyledNav>
       <NavContainer>
-        <a className="logo-container" href="#">
+        <a className="logo-container" href="#" onClick={closeMobileMenu}>
           <NavLogo />
         </a>
-        <MobileToggle onClick={handleMobileMenu} isOpen={openMobileMenu}>
-          <span></span>          
-          <span></span>
-          <span></span>
-        </MobileToggle>
-        <div className={`nav-links-container ${openMobileMenu ? 'open' : ''}`} ref={mobileRef} onClick={handleMobileMenu}>
-          <ul>
+
+        <div ref={mobileRef}>
+          <MobileToggle onClick={handleMobileMenu} isOpen={openMobileMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </MobileToggle>
+          <ul className={`${openMobileMenu ? 'open' : ''}`}>
             <li onClick={closeMobileMenu}>
               <a href="#">About</a>
             </li>
@@ -203,14 +225,12 @@ export const Nav = () => {
             </li>
             <li onClick={closeMobileMenu}>
               <a href="#" className="button">
-                <ContactButton>
-                  Contact
-                </ContactButton>
+                <ContactButton>Contact</ContactButton>
               </a>
             </li>
           </ul>
         </div>
       </NavContainer>
     </StyledNav>
-  )
-}
+  );
+};
