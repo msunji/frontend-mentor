@@ -14,9 +14,9 @@ const StyledNav = styled.nav`
 `;
 
 const NavContainer = styled(Container)`
-  width: 90%;
+  width: 85%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   padding: calc(1.28 * var(--padding-y)) 0;
 
@@ -37,8 +37,8 @@ const NavContainer = styled(Container)`
     position: absolute;
     top: 120px;
     left: 50%;
-    margin-left: -45%;
-    width: 90%;
+    margin-left: -42.5%;
+    width: 85%;
     background: var(--white);
     display: flex;
     height: 350px;
@@ -83,6 +83,7 @@ const NavContainer = styled(Container)`
 
   @media screen and ${breakpoints.lg} {
     max-width: 1500px;
+    align-items: center;
 
     ul {
       display: flex;
@@ -151,10 +152,10 @@ const ContactButton = styled.button`
 
 const MobileToggle = styled.div`
   width: 24px;
-  height: 23px;
+  height: 18px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   transition: opacity 0.4s ease;
   cursor: pointer;
 
