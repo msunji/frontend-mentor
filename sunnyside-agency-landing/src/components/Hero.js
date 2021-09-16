@@ -22,6 +22,9 @@ const HeroSection = styled.section`
   padding-top: calc(6*var(--padding-y));
 
   .HeroText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 
     h1 {
