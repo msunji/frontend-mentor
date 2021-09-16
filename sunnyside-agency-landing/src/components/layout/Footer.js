@@ -53,7 +53,7 @@ const FooterNavLinks = styled(FooterLinks)`
   margin-bottom: 4rem;
   color: var(--cyan-dark-moderate);
   li:not(:last-of-type) {
-    margin-right: 4rem;
+    margin-right: 3rem;
   }
 
   a,
