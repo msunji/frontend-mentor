@@ -22,6 +22,15 @@ const NavContainer = styled(Container)`
 
   .logo-container {
     display: flex;
+
+    svg {
+      transition: opacity 0.5s ease;
+      
+      &:hover,
+      &:active {
+        opacity: 0.5;
+      }
+    }
   }
 
   .nav-links-container {
@@ -99,6 +108,12 @@ const NavContainer = styled(Container)`
           color: var(--blue-black);
           letter-spacing: -0.13px;
           color: var(--white);
+          transition: opacity 0.5s ease;
+        }
+
+        a:not(.button):hover,
+        a:not(.button):active {
+          opacity: 0.5;
         }
       }
     }
@@ -187,7 +202,7 @@ export const Nav = () => {
               <a href="#">Projects</a>
             </li>
             <li onClick={closeMobileMenu}>
-              <a href="#">
+              <a href="#" className="button">
                 <ContactButton>
                   Contact
                 </ContactButton>
