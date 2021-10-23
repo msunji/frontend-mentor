@@ -1,10 +1,9 @@
 # Frontend Mentor Solutions
-You'll find my solutions to [Frontend Mentor](https://www.frontendmentor.io/) challenges in this repo. Each challenge is in its own repo, but you can view the finished product in the list below ✌🏻 For the most part, I'll be using React to complete these challenges.
+Here are some of my [Frontend Mentor](https://www.frontendmentor.io/) solutions. Moving forward, I'll be making a separate repository for each project. 
 
-[View Compilation](https://agitated-lewin-aa41a1.netlify.app/) | [View Compilation Repo](https://github.com/msunji/fe-mentor-compilation)
+This particular repository contains solutions to the following problems:
+- Social Proof Component ([View Live Site](https://fe-mentor-social-proof-mu.vercel.app/))
+- Stats Preview ([View Live Site](https://fe-mentor-stats-card.vercel.app/))
+- Single Price Grid Component ([View Live Site](https://fe-mentor-single-price-grid.vercel.app/))
 
-## Todo's
-- [x] Stats Preview Card component
-- [x] Single Price Grid component
-- [x] Social Proof component
-- [x] Sunnyside Agency landing page
+If you'd like to see a full list of solutions (and links to their repos and live sites), you can check out this [compilation site](https://agitated-lewin-aa41a1.netlify.app/).
