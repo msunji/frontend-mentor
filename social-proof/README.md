@@ -1,18 +1,18 @@
 # Frontend Mentor: Social Proof Section
 
-[View the Challenge](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA) | [View the Solution](https://fe-mentor-social-proof-mu.vercel.app/)
+<p align="center">
+<img src="https://res.cloudinary.com/dxzcdb0pm/image/upload/v1646190533/fem-compilation/social-proof_mg3jl0.png" alt="Social Proof Sectione Preview" />
+</p>
+<br />
+<p align="center">
+  <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA">View Challenge</a> | <a href="https://fe-mentor-social-proof-mu.vercel.app/">View Live Site</a>
+</div>
+
+<br />
 
 ## Overview
 
 For this challenge, users need to be able to view the optimal layout depending on their screen size.
-
-Here's what the project looks like on desktop:
-
-![Desktop Preview](https://github.com/msunji/frontend-mentor/blob/main/social-proof/public/img/desktop-preview.png)
-
-and on mobile:
-
-![Mobile Preview](https://github.com/msunji/frontend-mentor/blob/main/social-proof/public/img/mobile-preview.png)
 
 As per usual, I've used React and styled-components for this solution, as well as a mix of flexbox and CSS Grid.
 
