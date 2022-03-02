@@ -1,20 +1,18 @@
-# Frontend Mentor: Stats preview card component solution
+# Frontend Mentor: Stats Preview Card Component Solution
 
-Here's a take on this [challenge](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62).
+<p align="center">
+  <img src="https://res.cloudinary.com/dxzcdb0pm/image/upload/v1646190533/fem-compilation/stats-preview_juoqvn.png" alt="Stats Preview Card Component Preview" />
+</p>
+<br />
+<p align="center">
+  <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62">View Challenge</a> | <a href="https://fe-mentor-stats-card.vercel.app/">View Live Site</a>
+</div>
 
-[View my solution](https://fe-mentor-stats-card.vercel.app/)
+<br />
+
+---
 
 ## Overview
-
-For this challenge, users need to be able to **view the optimal layout depending on their device's screen size**.
-
-Here's how the project looks like on desktop:
-
-![Desktop Preview](https://github.com/msunji/frontend-mentor/blob/main/stats-card/public/assets/img/desktop-preview.png)
-
-and here's how it looks on smaller screens:
-
-![Mobile Preview](https://github.com/msunji/frontend-mentor/blob/main/stats-card/public/assets/img/mobile-preview.png)
 
 There's not much to be said about this project I think. It's a good way to practice flexbox. Some bits about this project worth noting (for my personal reference):
 
