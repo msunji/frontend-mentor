@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA">View Challenge</a> | <a href="https://fe-mentor-social-proof-mu.vercel.app/">View Live Site</a>
-</div>
+</p>
 
 <br />
 

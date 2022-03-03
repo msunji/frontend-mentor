@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc">View Challenge</a> | <a href="https://fe-mentor-single-price-grid.vercel.app/">View Live Site</a>
-</div>
+</p>
 
 <br />
 

@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62">View Challenge</a> | <a href="https://fe-mentor-stats-card.vercel.app/">View Live Site</a>
-</div>
+</p>
 
 <br />
 
