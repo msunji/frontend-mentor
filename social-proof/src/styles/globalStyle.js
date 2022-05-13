@@ -57,6 +57,15 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     justify-content: center;
   }
+  a {
+    transition: color 1s ease;
+  }
+  a, a:visited {
+    color: var(--magenta-dark);
+  }
+  a:hover {
+    color: var(--pink);
+  }
   @media screen and ${breakpoints.lg} {
     body {
       background-image: 
