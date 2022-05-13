@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { TestimonialsData } from "../content/content";
 import breakpoints from "../styles/breakpoints";
 
-const TestimonialSection = styled.section`
+const TestimonialSection = styled.div`
   grid-area: testimonials;
   display: grid;
   gap: 1rem;

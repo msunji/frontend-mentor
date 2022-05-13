@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import breakpoints from "../styles/breakpoints";
 
-const TextSection = styled.section`
+const TextSection = styled.div`
   text-align: center;
   h1 {
     font-weight: 700;

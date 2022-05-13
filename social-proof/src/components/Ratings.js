@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { RatingsData } from "../content/content";
 import breakpoints from "../styles/breakpoints";
 
-const RatingsSection = styled.section`
+const RatingsSection = styled.div`
   grid-area: ratings;
   display: flex;
   flex-direction: column;
